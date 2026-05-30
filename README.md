@@ -30,3 +30,7 @@ Created histograms and KDE plots for distribution analysis and visualization.
 💻 Tech Stack
 Language: Python 3 (Google Colab)
 Libraries: NumPy, Pandas, Matplotlib, Seaborn, SciPy
+
+
+Week 2 :-
+
