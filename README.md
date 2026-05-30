@@ -37,14 +37,14 @@ Libraries: NumPy, Pandas, Matplotlib, Seaborn, SciPy
 
 
 
-Week 2 :-Classical Machine Learning.
+Week 2 :-Machine Learning & Time Series Analysis Fundamentals
 
 ## Dataset
 
 Dataset Source: [Kaggle - Tesla Deliveries and Production Data (2015–2025)](https://www.kaggle.com/datasets/nalisha/tesla-ea-deliveries-and-production-data20152025)
 
 
-# Machine Learning & Time Series Analysis Fundamentals
+
 
 ## Overview
 
@@ -58,195 +58,95 @@ The project covers the complete machine learning lifecycle, from data preprocess
 
 ### 1. Introduction to Machine Learning
 
-* Definition and importance of Machine Learning
-* Real-world applications
-* Machine Learning workflow
+## Topics Covered
+
+### 1. Introduction to Machine Learning
+
+Machine Learning enables computers to learn patterns from data and make predictions without explicit programming.
 
 ### 2. Types of Machine Learning
 
-* Supervised Learning
-* Unsupervised Learning
-* Reinforcement Learning
+Machine Learning is categorized into supervised, unsupervised, and reinforcement learning based on the learning approach.
 
 ### 3. Machine Learning Pipeline
 
-* Data Collection
-* Data Preprocessing
-* Feature Engineering
-* Model Training
-* Model Evaluation
-* Deployment
+A structured workflow that transforms raw data into a trained and evaluated machine learning model.
 
 ### 4. Bias-Variance Tradeoff
 
-* Understanding Bias
-* Understanding Variance
-* Balancing model complexity
+The balance between model simplicity and complexity to achieve optimal generalization performance.
 
 ### 5. Underfitting and Overfitting
 
-* Causes and effects
-* Detection techniques
-* Prevention strategies
+Underfitting fails to capture patterns, while overfitting memorizes training data and performs poorly on new data.
 
 ### 6. Data Cleaning
 
-* Handling Missing Values
-* Removing Duplicates
-* Outlier Detection
-* Data Consistency Checks
+The process of handling missing values, duplicates, inconsistencies, and outliers to improve data quality.
 
 ### 7. Exploratory Data Analysis (EDA)
 
-* Statistical Summaries
-* Data Visualization
-* Correlation Analysis
-* Pattern Discovery
+Analyzing and visualizing data to understand distributions, patterns, and relationships among variables.
 
 ### 8. Encoding Techniques
 
-* Label Encoding
-* One-Hot Encoding
-* Ordinal Encoding
-* Target Encoding
+Methods used to convert categorical variables into numerical representations for machine learning models.
 
 ### 9. Feature Scaling
 
-* Standardization
-* Normalization
-* Robust Scaling
+Transforming numerical features to a common scale to improve model performance and convergence.
 
 ### 10. Feature Engineering
 
-* Feature Creation
-* Feature Transformation
-* Feature Selection
+Creating, transforming, and selecting features to enhance predictive model accuracy.
 
 ### 11. Data Leakage
 
-* Understanding Leakage
-* Common Sources
-* Prevention Methods
+A modeling error where information from outside the training dataset improperly influences the model.
 
 ### 12. Linear Regression
 
-* Regression Fundamentals
-* Model Assumptions
-* Training and Prediction
+A statistical method that models the relationship between independent variables and a continuous target variable.
 
 ### 13. Ridge Regression
 
-* L2 Regularization
-* Advantages and Use Cases
+A regularized regression technique that reduces overfitting using L2 penalty.
 
 ### 14. Lasso Regression
 
-* L1 Regularization
-* Feature Selection Benefits
+A regularized regression technique that performs feature selection using L1 penalty.
 
 ### 15. Evaluation Metrics
 
-* MAE (Mean Absolute Error)
-* MSE (Mean Squared Error)
-* RMSE (Root Mean Squared Error)
-* R² Score
+Quantitative measures used to assess the performance and accuracy of machine learning models.
 
 ### 16. Cross Validation
 
-* K-Fold Cross Validation
-* Stratified K-Fold
-* Model Reliability Assessment
+A resampling technique used to evaluate model performance on multiple data subsets.
 
 ### 17. Hyperparameter Tuning
 
-* Grid Search
-* Random Search
-* Optimization Techniques
+The process of optimizing model parameters to achieve the best predictive performance.
 
 ### 18. Time Series Components
 
-* Trend
-* Seasonality
-* Cyclic Patterns
-* Residuals
+Time series data consists of trend, seasonality, cyclic patterns, and random variations.
 
 ### 19. Stationarity
 
-* Concept of Stationarity
-* Importance in Forecasting
-* Stationarity Tests
+A property where a time series maintains constant statistical characteristics over time.
 
 ### 20. Rolling Statistics
 
-* Rolling Mean
-* Rolling Standard Deviation
-* Trend Analysis
+Moving calculations used to analyze trends and variability in time series data.
 
 ### 21. Forecasting
 
-* Future Value Prediction
-* Forecasting Techniques
-* Model Evaluation
+Predicting future observations based on historical patterns and trends in data.
 
 ### 22. Chronological Train-Test Split
 
-* Time-Aware Data Splitting
-* Avoiding Data Leakage
-* Best Practices
+A time-aware data splitting method that preserves the natural order of observations.
 
----
 
-## Learning Outcomes
 
-After completing this project, you will be able to:
-
-* Understand core Machine Learning concepts.
-* Build structured Machine Learning pipelines.
-* Perform effective data preprocessing and feature engineering.
-* Evaluate and improve model performance.
-* Apply regularization techniques to reduce overfitting.
-* Conduct exploratory data analysis using visualizations.
-* Work with time series datasets and forecasting methods.
-* Implement proper train-test splitting strategies for temporal data.
-
----
-
-## Technologies Used
-
-* Python
-* NumPy
-* Pandas
-* Matplotlib
-* Seaborn
-* Scikit-learn
-* Statsmodels
-
----
-
-## Project Structure
-
-```text
-Machine-Learning-Time-Series/
-│
-├── Data Cleaning
-├── Exploratory Data Analysis
-├── Feature Engineering
-├── Encoding Techniques
-├── Feature Scaling
-├── Regression Models
-├── Model Evaluation
-├── Cross Validation
-├── Hyperparameter Tuning
-├── Time Series Analysis
-├── Forecasting
-└── README.md
-```
-
----
-
-## Conclusion
-
-This project serves as a complete learning resource covering fundamental Machine Learning and Time Series concepts. It provides the theoretical understanding and practical workflow required to build reliable predictive models and forecasting systems for real-world applications.
-
----
-Machine Learning is an end-to-end process: data prep → modeling → evaluation → deployment. Mastering fundamentals like bias-variance tradeoff, regularization, cross-validation, and time series forecasting ensures robust, reliable ML systems.
