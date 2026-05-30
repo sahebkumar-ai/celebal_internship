@@ -32,7 +32,10 @@ Language: Python 3 (Google Colab)
 Libraries: NumPy, Pandas, Matplotlib, Seaborn, SciPy
 
 
+
+
 Week 2 :-Classical Machine Learning.
+Dataset link:("/kaggle/input/datasets/nalisha/tesla-ea-deliveries-and-production-data20152025/tesla_deliveries_dataset_2015_2025.csv")
 
 Machine Learning Fundamentals
 1. Introduction
