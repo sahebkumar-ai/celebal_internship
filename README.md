@@ -43,167 +43,210 @@ Week 2 :-Classical Machine Learning.
 
 Dataset Source: [Kaggle - Tesla Deliveries and Production Data (2015–2025)](https://www.kaggle.com/datasets/nalisha/tesla-ea-deliveries-and-production-data20152025)
 
-Machine Learning Fundamentals
-1. Introduction
-Machine Learning (ML) is a branch of Artificial Intelligence (AI) that enables systems to learn from data and improve performance without explicit programming.
 
-Why ML matters:
+# Machine Learning & Time Series Analysis Fundamentals
 
-Automates decision-making
+## Overview
 
-Handles massive datasets
+This repository provides a comprehensive overview of essential Machine Learning and Time Series Analysis concepts. It is designed for students, beginners, and aspiring data scientists who want to build a strong foundation in machine learning workflows, model development, evaluation techniques, and forecasting methodologies.
 
-Reveals hidden patterns
+The project covers the complete machine learning lifecycle, from data preprocessing and exploratory analysis to model training, evaluation, and time series forecasting.
 
-Improves with experience
+---
 
-Applications: Recommendation systems, fraud detection, healthcare, stock prediction, NLP, computer vision.
+## Topics Covered
 
-2. Types of Machine Learning
-Supervised Learning → learns from labeled data
-Examples: House price prediction, spam detection
-Algorithms: Linear/Logistic Regression, Decision Trees, Random Forest
+### 1. Introduction to Machine Learning
 
-Unsupervised Learning → finds patterns in unlabeled data
-Examples: Customer segmentation, market basket analysis
-Algorithms: K-Means, Hierarchical Clustering, PCA
+* Definition and importance of Machine Learning
+* Real-world applications
+* Machine Learning workflow
 
-Semi-Supervised Learning → small labeled + large unlabeled data
-Example: Medical image classification
+### 2. Types of Machine Learning
 
-Reinforcement Learning → agent learns via rewards
-Examples: Robotics, self-driving cars, game AI
+* Supervised Learning
+* Unsupervised Learning
+* Reinforcement Learning
 
-3. ML Pipeline
-Data Collection
+### 3. Machine Learning Pipeline
 
-Data Cleaning
+* Data Collection
+* Data Preprocessing
+* Feature Engineering
+* Model Training
+* Model Evaluation
+* Deployment
 
-Exploratory Data Analysis (EDA)
+### 4. Bias-Variance Tradeoff
 
-Feature Engineering
+* Understanding Bias
+* Understanding Variance
+* Balancing model complexity
 
-Train-Test Split
+### 5. Underfitting and Overfitting
 
-Model Training
+* Causes and effects
+* Detection techniques
+* Prevention strategies
 
-Evaluation
+### 6. Data Cleaning
 
-Hyperparameter Tuning
+* Handling Missing Values
+* Removing Duplicates
+* Outlier Detection
+* Data Consistency Checks
 
-Deployment
+### 7. Exploratory Data Analysis (EDA)
 
-Monitoring
+* Statistical Summaries
+* Data Visualization
+* Correlation Analysis
+* Pattern Discovery
 
-4. Bias-Variance Tradeoff
-High Bias → underfitting (too simple)
+### 8. Encoding Techniques
 
-High Variance → overfitting (too complex)
+* Label Encoding
+* One-Hot Encoding
+* Ordinal Encoding
+* Target Encoding
 
-Goal → balance bias & variance for optimal generalization
+### 9. Feature Scaling
 
-5. Underfitting vs Overfitting
-Underfitting: High train & test error → solution: add features, complex model
+* Standardization
+* Normalization
+* Robust Scaling
 
-Overfitting: Low train error, high test error → solution: more data, regularization, cross-validation
+### 10. Feature Engineering
 
-6. Data Cleaning
-Handle missing values (drop, mean/median/mode imputation)
+* Feature Creation
+* Feature Transformation
+* Feature Selection
 
-Remove duplicates (df.drop_duplicates())
+### 11. Data Leakage
 
-Handle outliers (IQR, Z-score)
+* Understanding Leakage
+* Common Sources
+* Prevention Methods
 
-Fix data types (astype())
+### 12. Linear Regression
 
-7. Exploratory Data Analysis (EDA)
-Univariate: histograms, box plots
+* Regression Fundamentals
+* Model Assumptions
+* Training and Prediction
 
-Bivariate: scatter plots, correlation matrix
+### 13. Ridge Regression
 
-Multivariate: pair plots, heatmaps
+* L2 Regularization
+* Advantages and Use Cases
 
-8. Encoding Techniques
-Label Encoding → ordinal categories
+### 14. Lasso Regression
 
-One-Hot Encoding → nominal categories
+* L1 Regularization
+* Feature Selection Benefits
 
-Target Encoding → replace with target mean (useful for high-cardinality features)
+### 15. Evaluation Metrics
 
-9. Feature Scaling
-Standardization: mean=0, std=1 (StandardScaler)
+* MAE (Mean Absolute Error)
+* MSE (Mean Squared Error)
+* RMSE (Root Mean Squared Error)
+* R² Score
 
-Normalization: scale to [0,1] (MinMaxScaler)
+### 16. Cross Validation
 
-Important for: Linear/Logistic Regression, SVM, KNN, Neural Nets
+* K-Fold Cross Validation
+* Stratified K-Fold
+* Model Reliability Assessment
 
-10. Feature Engineering
-Date features: year, month, weekday
+### 17. Hyperparameter Tuning
 
-Interaction features: area × rooms
+* Grid Search
+* Random Search
+* Optimization Techniques
 
-Transformations: log, sqrt
+### 18. Time Series Components
 
-Binning: convert continuous → categorical
+* Trend
+* Seasonality
+* Cyclic Patterns
+* Residuals
 
-11. Data Leakage
-Occurs when future/test info leaks into training.
-Prevention: split before preprocessing, use pipelines, validate properly.
+### 19. Stationarity
 
-12–14. Regression Models
-Linear Regression: 
-𝑦
-=
-𝛽
-0
-+
-𝛽
-1
-𝑥
-+
-𝜀
+* Concept of Stationarity
+* Importance in Forecasting
+* Stationarity Tests
 
-Ridge Regression (L2): shrinks coefficients, handles multicollinearity
+### 20. Rolling Statistics
 
-Lasso Regression (L1): feature selection, reduces complexity
+* Rolling Mean
+* Rolling Standard Deviation
+* Trend Analysis
 
-Feature	Ridge	Lasso
-Penalty	L2	L1
-Feature Selection	No	Yes
-Coefficients	Shrinks	Can become zero
+### 21. Forecasting
 
+* Future Value Prediction
+* Forecasting Techniques
+* Model Evaluation
 
-15. Evaluation Metrics
-MAE: average absolute error
+### 22. Chronological Train-Test Split
 
-MSE: average squared error
+* Time-Aware Data Splitting
+* Avoiding Data Leakage
+* Best Practices
 
-RMSE: sqrt of MSE
+---
 
-R²: variance explained
+## Learning Outcomes
 
-16. Cross Validation
-K-Fold CV: split into K folds, train on K-1, validate on 1, repeat.
+After completing this project, you will be able to:
 
-Benefits: better performance estimate, reduces overfitting risk.
+* Understand core Machine Learning concepts.
+* Build structured Machine Learning pipelines.
+* Perform effective data preprocessing and feature engineering.
+* Evaluate and improve model performance.
+* Apply regularization techniques to reduce overfitting.
+* Conduct exploratory data analysis using visualizations.
+* Work with time series datasets and forecasting methods.
+* Implement proper train-test splitting strategies for temporal data.
 
-17. Hyperparameter Tuning
-Grid Search: exhaustive search
+---
 
-Random Search: random sampling
+## Technologies Used
 
-Bayesian Optimization: guided search using prior results
+* Python
+* NumPy
+* Pandas
+* Matplotlib
+* Seaborn
+* Scikit-learn
+* Statsmodels
 
-18–22. Time Series
-Components: trend, seasonality, cycles, noise
+---
 
-Stationarity: constant mean/variance → achieved via differencing/log transform
+## Project Structure
 
-Rolling Statistics: moving averages & std for trend/volatility
+```text
+Machine-Learning-Time-Series/
+│
+├── Data Cleaning
+├── Exploratory Data Analysis
+├── Feature Engineering
+├── Encoding Techniques
+├── Feature Scaling
+├── Regression Models
+├── Model Evaluation
+├── Cross Validation
+├── Hyperparameter Tuning
+├── Time Series Analysis
+├── Forecasting
+└── README.md
+```
 
-Forecasting Models: ARIMA, SARIMA, Random Forest, LSTM
+---
 
-Chronological Split: train on past, test on future (avoid random split)
+## Conclusion
 
-🎯 Conclusion
+This project serves as a complete learning resource covering fundamental Machine Learning and Time Series concepts. It provides the theoretical understanding and practical workflow required to build reliable predictive models and forecasting systems for real-world applications.
+
+---
 Machine Learning is an end-to-end process: data prep → modeling → evaluation → deployment. Mastering fundamentals like bias-variance tradeoff, regularization, cross-validation, and time series forecasting ensures robust, reliable ML systems.
