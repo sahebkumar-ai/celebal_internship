@@ -35,7 +35,10 @@ Libraries: NumPy, Pandas, Matplotlib, Seaborn, SciPy
 
 
 Week 2 :-Classical Machine Learning.
-Dataset link:("/kaggle/input/datasets/nalisha/tesla-ea-deliveries-and-production-data20152025/tesla_deliveries_dataset_2015_2025.csv")
+
+## Dataset
+
+Dataset Source: [Kaggle - Tesla Deliveries and Production Data (2015–2025)](https://www.kaggle.com/datasets/nalisha/tesla-ea-deliveries-and-production-data20152025)
 
 Machine Learning Fundamentals
 1. Introduction
