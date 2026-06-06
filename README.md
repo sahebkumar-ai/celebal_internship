@@ -159,6 +159,12 @@ Implements time-aware data splitting techniques that preserve temporal order and
 
 Week 3: Classification Machine Learning Algorithms, Ensemble Methods & Clustering Techniques
 
+## 📊 Dataset
+
+Dataset used in this project:
+
+🔗 [Country Data Dataset (Kaggle)](https://www.kaggle.com/datasets/rohan0301/unsupervised-learning-on-country-data)
+
 ## 📌 Overview
 
 This repository provides a comprehensive collection of Machine Learning algorithms, ensemble learning techniques, clustering methodologies, feature importance analysis, and model evaluation frameworks implemented using Python and industry-standard libraries.
