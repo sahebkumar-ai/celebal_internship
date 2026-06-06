@@ -157,7 +157,7 @@ Implements time-aware data splitting techniques that preserve temporal order and
 * Built a strong foundation for developing scalable and production-ready machine learning solutions.
 
 
-Week 3 :-Classification Machine Learning Algorithms, Ensemble Methods & Clustering Techniques
+Week 3: Classification Machine Learning Algorithms, Ensemble Methods & Clustering Techniques
 
 ## 📌 Overview
 
