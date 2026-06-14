@@ -458,7 +458,7 @@ The implemented techniques can be applied across various domains, including:
 To provide a structured, hands-on learning platform for understanding and implementing Machine Learning algorithms, ensemble models, clustering techniques, and evaluation frameworks while developing practical skills applicable to real-world data science projects.
 
 
-Week 3:  Deep Learning Fundamentals
+Week 4:  Deep Learning Fundamentals
 
 # CIFAR-10 Image Classification using Artificial Neural Networks (ANN) and Convolutional Neural Networks (CNN)
 
@@ -687,5 +687,79 @@ Through this project, the following concepts were explored:
 This project demonstrates the effectiveness of Convolutional Neural Networks for image classification tasks. While ANN models provide a useful baseline, CNNs significantly outperform them by leveraging spatial information within images. The integration of Data Augmentation, Batch Normalization, Dropout, and Early Stopping further enhances model performance and generalization, making the improved CNN architecture a reliable solution for image recognition problems.
 
 The project provides a strong foundation for advanced computer vision applications and serves as an excellent learning resource for deep learning practitioners and students.
+
+
+
+## 📚 Topics Covered
+
+This repository provides a structured introduction to Deep Learning, covering the fundamental building blocks of neural networks, advanced learning mechanisms, and modern computer vision techniques. Each topic is explained with theoretical concepts, mathematical intuition, and practical implementation examples.
+
+### 🔹 Perceptron
+
+Explore the foundational unit of Artificial Neural Networks. Learn how a perceptron processes input features using weights and bias to perform binary classification tasks, along with its advantages and limitations.
+
+### 🔹 Multi-Layer Perceptron (MLP)
+
+Understand how multiple interconnected layers enable neural networks to learn complex non-linear relationships. This section covers network architecture, hidden layers, activation functions, and practical applications of MLPs.
+
+### 🔹 Forward Pass
+
+Learn how information flows through a neural network from the input layer to the output layer. This topic explains weighted summation, activation functions, and the generation of predictions during model inference.
+
+### 🔹 Backpropagation
+
+Study the core learning mechanism of neural networks. Learn how prediction errors are propagated backward through the network to update weights and improve model performance using gradient-based optimization techniques.
+
+### 🔹 Sigmoid and Tanh Activation Functions
+
+Understand the mathematical foundations, characteristics, and practical applications of Sigmoid and Tanh activation functions. Learn their advantages, limitations, and impact on neural network training.
+
+### 🔹 ReLU Family
+
+Explore modern activation functions used in deep learning, including ReLU, Leaky ReLU, Parametric ReLU (PReLU), and ELU. Learn how these functions help overcome vanishing gradient problems and improve training efficiency.
+
+### 🔹 Loss Functions in Deep Learning
+
+Gain an understanding of how neural networks measure prediction error during training. Topics include Mean Squared Error (MSE), Mean Absolute Error (MAE), Binary Cross-Entropy, and Categorical Cross-Entropy, along with their appropriate use cases.
+
+### 🔹 Convolution Layer
+
+Discover the fundamental building block of Convolutional Neural Networks (CNNs). Learn how convolution operations use filters and kernels to extract meaningful features such as edges, textures, and patterns from images.
+
+### 🔹 Pooling and Stride
+
+Understand techniques used to reduce feature map dimensions and computational complexity. Learn the role of Max Pooling, Average Pooling, and Stride in improving model efficiency and feature extraction.
+
+### 🔹 Padding
+
+Learn how padding preserves spatial information and controls output dimensions during convolution operations. Explore different padding strategies, including Valid Padding and Same Padding.
+
+### 🔹 CNN Architectures
+
+Study the evolution of Convolutional Neural Networks through influential architectures such as LeNet, AlexNet, VGG, ResNet, and Inception. Understand their innovations, design principles, and contributions to computer vision.
+
+### 🔹 Transfer Learning
+
+Learn how pre-trained deep learning models can be adapted for new tasks with minimal training data. Explore feature extraction, fine-tuning techniques, and the practical use of architectures such as VGG16, ResNet50, MobileNet, and EfficientNet.
+
+---
+
+## 🎯 Learning Outcomes
+
+By completing this repository, learners will be able to:
+
+* Understand the core principles of Deep Learning and Neural Networks.
+* Build and train Artificial Neural Networks (ANNs) from scratch.
+* Implement Forward Propagation and Backpropagation algorithms.
+* Apply activation functions effectively in different scenarios.
+* Select appropriate loss functions for classification and regression problems.
+* Understand the internal workings of Convolutional Neural Networks (CNNs).
+* Perform image feature extraction using convolution operations.
+* Apply pooling, stride, and padding techniques in CNN architectures.
+* Explore and compare popular deep learning architectures.
+* Utilize Transfer Learning for real-world computer vision applications.
+* Develop, train, evaluate, and optimize deep learning models using industry-standard frameworks.
+
+This repository serves as a comprehensive learning resource for students, aspiring data scientists, machine learning engineers, and professionals seeking a strong foundation in Deep Learning and Computer Vision.
 
 
