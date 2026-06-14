@@ -457,3 +457,235 @@ The implemented techniques can be applied across various domains, including:
 
 To provide a structured, hands-on learning platform for understanding and implementing Machine Learning algorithms, ensemble models, clustering techniques, and evaluation frameworks while developing practical skills applicable to real-world data science projects.
 
+
+Week 3:  Deep Learning Fundamentals
+
+# CIFAR-10 Image Classification using Artificial Neural Networks (ANN) and Convolutional Neural Networks (CNN)
+
+## Project Overview
+
+This project explores image classification using Deep Learning techniques on the CIFAR-10 dataset. The objective is to compare the performance of Artificial Neural Networks (ANNs) and Convolutional Neural Networks (CNNs) in recognizing and classifying images across ten categories.
+
+The project demonstrates how different neural network architectures impact model performance and highlights the importance of convolutional layers for computer vision tasks.
+
+---
+
+## Dataset
+
+The CIFAR-10 dataset consists of 60,000 color images of size 32×32 pixels distributed across 10 classes:
+
+* Airplane
+* Automobile
+* Bird
+* Cat
+* Deer
+* Dog
+* Frog
+* Horse
+* Ship
+* Truck
+
+Dataset Distribution:
+
+* Training Images: 50,000
+* Testing Images: 10,000
+* Number of Classes: 10
+* Image Size: 32 × 32 × 3
+
+---
+
+## Technologies and Libraries Used
+
+* Python
+* TensorFlow
+* Keras
+* NumPy
+* Pandas
+* Matplotlib
+
+---
+
+## Project Workflow
+
+### 1. Data Loading and Preprocessing
+
+* Loaded the CIFAR-10 dataset from TensorFlow.
+* Normalized pixel values from 0–255 to 0–1.
+* Prepared training and testing datasets.
+
+### 2. Artificial Neural Network (ANN)
+
+Implemented a baseline ANN model by flattening image data into one-dimensional vectors.
+
+#### ANN Architecture
+
+* Flatten Layer
+* Dense Layer (ReLU)
+* Dense Layer (ReLU)
+* Output Layer (Softmax)
+
+#### Limitations
+
+ANN treats images as simple arrays of numbers and cannot effectively capture spatial relationships between pixels.
+
+---
+
+### 3. Deep Artificial Neural Network
+
+Developed a deeper ANN architecture with additional hidden layers.
+
+#### Improvements
+
+* Increased model complexity.
+* Enhanced feature learning capability.
+* Achieved better accuracy than the baseline ANN.
+
+However, the model still lacked the ability to extract spatial image features effectively.
+
+---
+
+### 4. Convolutional Neural Network (CNN)
+
+Implemented a CNN model designed specifically for image classification.
+
+#### CNN Architecture
+
+* Data Augmentation Layer
+
+* Conv2D (32 Filters)
+
+* Batch Normalization
+
+* Max Pooling
+
+* Conv2D (64 Filters)
+
+* Batch Normalization
+
+* Max Pooling
+
+* Conv2D (128 Filters)
+
+* Batch Normalization
+
+* Flatten Layer
+
+* Dense Layer (128 Neurons)
+
+* Dropout (0.4)
+
+* Output Layer (Softmax)
+
+---
+
+### 5. Training Improvements
+
+The following techniques were incorporated to improve model performance:
+
+#### Data Augmentation
+
+* Random Horizontal Flip
+* Random Rotation
+* Random Zoom
+
+Benefits:
+
+* Increases training data diversity.
+* Reduces overfitting.
+* Improves generalization.
+
+#### Batch Normalization
+
+Benefits:
+
+* Stabilizes training.
+* Speeds up convergence.
+* Improves model performance.
+
+#### Dropout Regularization
+
+Benefits:
+
+* Prevents overfitting.
+* Encourages robust feature learning.
+
+#### Early Stopping
+
+Benefits:
+
+* Stops training when validation performance stops improving.
+* Restores the best-performing model weights.
+
+---
+
+## Model Evaluation
+
+Models were evaluated using:
+
+* Accuracy Score
+* Training Accuracy
+* Validation Accuracy
+* Test Accuracy
+* Loss Curves
+
+### Performance Comparison
+
+| Model        | Expected Accuracy Range |
+| ------------ | ----------------------- |
+| Basic ANN    | 45% – 55%               |
+| Deep ANN     | 55% – 65%               |
+| CNN          | 70% – 80%               |
+| Improved CNN | 75% – 85%               |
+
+The CNN significantly outperformed ANN models because it can automatically learn spatial and hierarchical image features.
+
+---
+
+## Key Findings
+
+* ANN models struggle with image data because they ignore spatial information.
+* CNNs effectively capture patterns such as edges, textures, and object shapes.
+* Increasing CNN filters from 32 → 64 → 128 improves feature extraction capability.
+* Batch Normalization and Dropout improve model stability and reduce overfitting.
+* Data Augmentation enhances model generalization.
+* Early Stopping prevents unnecessary training and helps retain the best model.
+
+---
+
+## Results
+
+The improved CNN achieved the highest performance among all tested models and demonstrated strong generalization on unseen images.
+
+Key achievements:
+
+* Better feature extraction
+* Reduced overfitting
+* Improved validation performance
+* Higher test accuracy
+* Robust image classification capability
+
+---
+
+## Learning Outcomes
+
+Through this project, the following concepts were explored:
+
+* Deep Learning Fundamentals
+* Artificial Neural Networks (ANN)
+* Convolutional Neural Networks (CNN)
+* Image Preprocessing
+* Data Augmentation
+* Batch Normalization
+* Dropout Regularization
+* Early Stopping
+* Model Evaluation and Comparison
+
+---
+
+## Conclusion
+
+This project demonstrates the effectiveness of Convolutional Neural Networks for image classification tasks. While ANN models provide a useful baseline, CNNs significantly outperform them by leveraging spatial information within images. The integration of Data Augmentation, Batch Normalization, Dropout, and Early Stopping further enhances model performance and generalization, making the improved CNN architecture a reliable solution for image recognition problems.
+
+The project provides a strong foundation for advanced computer vision applications and serves as an excellent learning resource for deep learning practitioners and students.
+
+
