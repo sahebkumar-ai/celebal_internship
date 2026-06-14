@@ -1,4 +1,4 @@
-Week 1 – Python, Linear Algebra & Statistics
+#Week 1 – Python, Linear Algebra & Statistics
 
 This repository contains a strong foundational collection of tasks covering core Python programming, NumPy, Pandas, Linear Algebra, and Statistics concepts essential for Machine Learning and Data Science. The project focuses on understanding implementation logic and mathematical foundations instead of relying completely on high-level frameworks.
 
@@ -37,7 +37,7 @@ Libraries: NumPy, Pandas, Matplotlib, Seaborn, SciPy
 
 
 
-Week 2 :-Machine Learning & Time Series Analysis Fundamentals
+#Week 2 :-Machine Learning & Time Series Analysis Fundamentals
 
 ## Dataset
 
@@ -157,7 +157,7 @@ Implements time-aware data splitting techniques that preserve temporal order and
 * Built a strong foundation for developing scalable and production-ready machine learning solutions.
 
 
-Week 3: Classification Machine Learning Algorithms, Ensemble Methods & Clustering Techniques
+#Week 3: Classification Machine Learning Algorithms, Ensemble Methods & Clustering Techniques
 
 ## 📊 Dataset
 
@@ -458,7 +458,7 @@ The implemented techniques can be applied across various domains, including:
 To provide a structured, hands-on learning platform for understanding and implementing Machine Learning algorithms, ensemble models, clustering techniques, and evaluation frameworks while developing practical skills applicable to real-world data science projects.
 
 
-Week 4:  Deep Learning Fundamentals
+#Week 4:  Deep Learning Fundamentals
 
 # CIFAR-10 Image Classification using Artificial Neural Networks (ANN) and Convolutional Neural Networks (CNN)
 
