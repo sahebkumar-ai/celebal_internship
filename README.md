@@ -458,7 +458,7 @@ The implemented techniques can be applied across various domains, including:
 To provide a structured, hands-on learning platform for understanding and implementing Machine Learning algorithms, ensemble models, clustering techniques, and evaluation frameworks while developing practical skills applicable to real-world data science projects.
 
 
-## Week 4 – Deep Learning Fundamentals
+##  Week 4 – Deep Learning Fundamentals
 
 # CIFAR-10 Image Classification using Artificial Neural Networks (ANN) and Convolutional Neural Networks (CNN)
 
@@ -763,7 +763,7 @@ By completing this repository, learners will be able to:
 This repository serves as a comprehensive learning resource for students, aspiring data scientists, machine learning engineers, and professionals seeking a strong foundation in Deep Learning and Computer Vision.
 
 
-### Week 5 – Recurrent Neural Network
+###  Week 5 – Recurrent Neural Network
 # 🧠 Text Generation using Vanilla RNN, LSTM, and GRU
 
 ## 📖 Overview
