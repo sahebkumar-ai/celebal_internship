@@ -1,4 +1,4 @@
-**Week 1 – Python, Linear Algebra & Statistics**
+## Week 1 – Python, Linear Algebra & Statistics
 
 This repository contains a strong foundational collection of tasks covering core Python programming, NumPy, Pandas, Linear Algebra, and Statistics concepts essential for Machine Learning and Data Science. The project focuses on understanding implementation logic and mathematical foundations instead of relying completely on high-level frameworks.
 
