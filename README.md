@@ -1,4 +1,4 @@
-##Week 1 – Python, Linear Algebra & Statistics
+Week 1 – Python, Linear Algebra & Statistics
 
 This repository contains a strong foundational collection of tasks covering core Python programming, NumPy, Pandas, Linear Algebra, and Statistics concepts essential for Machine Learning and Data Science. The project focuses on understanding implementation logic and mathematical foundations instead of relying completely on high-level frameworks.
 
@@ -761,5 +761,189 @@ By completing this repository, learners will be able to:
 * Develop, train, evaluate, and optimize deep learning models using industry-standard frameworks.
 
 This repository serves as a comprehensive learning resource for students, aspiring data scientists, machine learning engineers, and professionals seeking a strong foundation in Deep Learning and Computer Vision.
+
+
+Week 5 – Recurrent Neural Network
+# 🧠 Text Generation using Vanilla RNN, LSTM, and GRU
+
+## 📖 Overview
+
+This project demonstrates text generation using three popular recurrent neural network architectures:
+
+* Vanilla Recurrent Neural Network (RNN)
+* Long Short-Term Memory (LSTM)
+* Gated Recurrent Unit (GRU)
+
+The models are trained on a text corpus to learn language structure, grammar, contextual relationships, and sequential patterns. After training, the models generate new text by predicting the next word in a sequence.
+
+This notebook is designed for students, beginners, and deep learning enthusiasts who want to understand sequence modeling both mathematically and practically.
+
+---
+
+## 🎯 Objective
+
+Design and implement deep learning models capable of learning the underlying structure, grammar, and contextual dependencies of a given text corpus to generate coherent and meaningful text sequences using:
+
+* Vanilla RNN
+* LSTM
+* GRU
+
+The project further compares the performance of these architectures to understand the advantages of gated recurrent networks in sequence learning tasks.
+
+---
+
+## 📚 Learning Outcomes
+
+This project helps learners understand:
+
+### Grammar
+
+Learning the syntactic and grammatical structures of language to generate linguistically correct and meaningful sentences.
+
+### Sentence Flow
+
+Understanding the logical progression and arrangement of words to produce coherent, fluent, and naturally structured sentences.
+
+### Contextual Dependencies
+
+Capturing both short-term and long-term relationships between words to preserve context, meaning, and semantic consistency throughout a sequence.
+
+### Next-Word Prediction
+
+Modeling the probability distribution of words to accurately predict the most likely subsequent word given a preceding sequence.
+
+### Text Generation
+
+Generating contextually relevant and coherent text by leveraging learned language patterns, sequential dependencies, and semantic relationships.
+
+---
+
+## 🔬 Models Implemented
+
+### 1. Vanilla Recurrent Neural Network (RNN)
+
+A basic recurrent neural network that processes sequential data through recurrent connections.
+
+**Key Features**
+
+* Simple architecture
+* Learns short-term dependencies
+* Fast training
+* Suffers from vanishing gradients
+
+---
+
+### 2. Long Short-Term Memory (LSTM)
+
+An advanced recurrent architecture that uses memory cells and gating mechanisms to retain information over longer sequences.
+
+**Key Features**
+
+* Strong long-term memory
+* Handles vanishing gradient problems
+* Captures complex contextual patterns
+* Excellent text generation capability
+
+---
+
+### 3. Gated Recurrent Unit (GRU)
+
+A simplified version of LSTM that maintains strong performance with fewer parameters.
+
+**Key Features**
+
+* Faster training
+* Lower computational complexity
+* Effective memory retention
+* Performance comparable to LSTM
+
+---
+
+## ⚙️ Model Enhancements
+
+The original implementation was improved using the following modifications:
+
+| Parameter           | Original          | Updated            |
+| ------------------- | ----------------- | ------------------ |
+| Corpus              | Small sample text | Custom text corpus |
+| Embedding Dimension | 32                | 64                 |
+| Hidden Units        | 64                | 128                |
+| Training Epochs     | 100               | 200                |
+| Generated Words     | 5                 | 10                 |
+
+The corpus can be replaced with:
+
+* Shakespeare text
+* Song lyrics
+* Chatbot conversations
+* Story paragraphs
+* PDF-extracted text
+* Custom datasets
+
+---
+
+## 📊 Model Comparison
+
+The three architectures are evaluated using the following criteria:
+
+### Training Loss
+
+Measures how effectively each model learns patterns from the training data. Lower loss indicates better convergence and learning capability.
+
+### Generated Text Quality
+
+Evaluates the coherence, fluency, grammatical correctness, and contextual relevance of generated text.
+
+### Memory Handling
+
+Assesses the model's ability to retain and utilize information from previous time steps.
+
+### Long-Term Dependency Learning
+
+Measures how effectively the model captures relationships between distant words and phrases within a sequence.
+
+| Criterion                     | Vanilla RNN | LSTM      | GRU       |
+| ----------------------------- | ----------- | --------- | --------- |
+| Training Loss                 | Higher      | Lower     | Lower     |
+| Generated Text Quality        | Basic       | Excellent | Very Good |
+| Memory Handling               | Limited     | Strong    | Strong    |
+| Long-Term Dependency Learning | Weak        | Excellent | Very Good |
+
+---
+
+## 🛠️ Technologies Used
+
+* Python
+* TensorFlow / Keras
+* NumPy
+* Pandas
+* Matplotlib
+* Natural Language Processing (NLP)
+
+---
+
+## 🚀 Applications
+
+The concepts explored in this project are applicable to:
+
+* Natural Language Processing (NLP)
+* Language Modeling
+* Text Generation
+* Conversational AI
+* Chatbots
+* Machine Translation
+* Sentiment Analysis
+* Speech Recognition
+* Predictive Text Systems
+
+---
+
+## ✅ Conclusion
+
+This project provides a comprehensive introduction to sequence modeling using recurrent neural networks. Through the implementation and comparison of Vanilla RNN, LSTM, and GRU architectures, learners gain practical experience in understanding how neural networks process sequential data and generate meaningful text.
+
+The results demonstrate that Vanilla RNN is effective for learning short-term patterns but struggles with long-range dependencies. LSTM achieves the strongest performance through its memory cells and gating mechanisms, while GRU offers a balanced trade-off between computational efficiency and predictive performance.
+
+Overall, this project serves as a strong foundation for understanding sequence modeling, recurrent neural networks, and modern Natural Language Processing techniques.
 
 
