@@ -947,3 +947,6 @@ The results demonstrate that Vanilla RNN is effective for learning short-term pa
 Overall, this project serves as a strong foundation for understanding sequence modeling, recurrent neural networks, and modern Natural Language Processing techniques.
 
 
+
+
+
