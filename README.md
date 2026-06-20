@@ -763,7 +763,7 @@ By completing this repository, learners will be able to:
 This repository serves as a comprehensive learning resource for students, aspiring data scientists, machine learning engineers, and professionals seeking a strong foundation in Deep Learning and Computer Vision.
 
 
-Week 5 – Recurrent Neural Network
+### Week 5 – Recurrent Neural Network
 # 🧠 Text Generation using Vanilla RNN, LSTM, and GRU
 
 ## 📖 Overview
