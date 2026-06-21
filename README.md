@@ -951,4 +951,175 @@ Overall, this project serves as a strong foundation for understanding sequence m
 
 
 
+# 🧠 Deep Learning Architectures: RNNs, LSTMs, GRUs & Transformers
+
+This repository provides a clear and structured overview of fundamental and advanced Deep Learning architectures used in Natural Language Processing (NLP) and sequence modeling. It is designed for students, beginners, and ML practitioners preparing for interviews or projects.
+
+---
+
+## 📌 Table of Contents
+
+- Recurrent Neural Networks (RNN)
+- Backpropagation Through Time (BPTT)
+- LSTM Architecture & Gates
+- Cell State vs Hidden State
+- Applications of RNN-based Models
+- GRU (Gated Recurrent Unit)
+- GRU vs LSTM Comparison
+- Attention Mechanism
+- Multi-Head Attention
+- Positional Encoding
+- Transformer Architecture
+- BERT vs GPT
+
+---
+
+## 🔁 Recurrent Neural Networks (RNN)
+
+RNNs are neural networks designed for sequential data such as text, time series, and speech. They maintain a **memory (hidden state)** that captures information from previous time steps, making them suitable for language modeling and sequence prediction.
+
+However, RNNs suffer from issues like **vanishing and exploding gradients**, limiting their ability to learn long-term dependencies.
+
+---
+
+## 🔄 Backpropagation Through Time (BPTT)
+
+BPTT is the training algorithm used for RNNs. It unrolls the network through time and applies backpropagation across all time steps.
+
+Key idea:
+- Gradients are computed across sequence steps
+- Helps update weights based on temporal dependencies
+
+---
+
+## 🧠 LSTM (Long Short-Term Memory)
+
+LSTM improves RNNs by solving long-term dependency issues using **gates**:
+
+- Forget Gate: Removes irrelevant information  
+- Input Gate: Adds new information  
+- Output Gate: Produces final output  
+
+### 🧩 Cell State vs Hidden State
+- **Cell State:** Long-term memory carrier  
+- **Hidden State:** Short-term output for current step  
+
+LSTMs are widely used in text generation, speech recognition, and translation.
+
+---
+
+## 🚪 GRU (Gated Recurrent Unit)
+
+GRU is a simplified version of LSTM that combines gates for efficiency.
+
+### Update Gate
+Controls how much past information is kept vs updated.
+
+GRUs:
+- Faster to train than LSTMs
+- Require fewer parameters
+- Perform similarly in many tasks
+
+---
+
+## ⚖️ GRU vs LSTM
+
+| Feature        | LSTM                  | GRU                 |
+|----------------|----------------------|---------------------|
+| Gates          | 3 gates              | 2 gates             |
+| Complexity      | Higher               | Lower               |
+| Training Speed  | Slower               | Faster              |
+| Performance     | Strong long memory   | Efficient baseline  |
+
+---
+
+## 🔍 Attention Mechanism
+
+Attention allows models to focus on the most relevant parts of the input sequence instead of treating all inputs equally.
+
+It improves performance in translation and long sequence modeling by learning importance weights dynamically.
+
+---
+
+## 🎯 Multi-Head Attention
+
+Instead of using a single attention function, multi-head attention runs multiple attention operations in parallel.
+
+Benefits:
+- Captures different relationships in data
+- Improves representation learning
+- Core component of Transformers
+
+---
+
+## 📍 Positional Encoding
+
+Since Transformers do not process data sequentially, positional encoding is added to inject information about token positions.
+
+It helps the model understand:
+- Word order
+- Sequence structure
+
+---
+
+## ⚙️ Transformer Architecture
+
+Transformers are modern deep learning models that rely entirely on attention mechanisms instead of recurrence.
+
+Key components:
+- Encoder-Decoder structure
+- Multi-head attention
+- Feed-forward networks
+- Positional encoding
+
+They are the foundation of modern NLP systems.
+
+---
+
+## 🤖 BERT vs GPT
+
+### :contentReference[oaicite:0]{index=0}
+
+BERT is a **bidirectional encoder-only model** trained to understand context from both directions. It is mainly used for classification, question answering, and language understanding tasks.
+
+---
+
+### :contentReference[oaicite:1]{index=1}
+
+GPT is a **decoder-only generative model** designed for text generation. It predicts the next word in a sequence and is widely used in chatbots, content generation, and assistants.
+
+---
+
+## 🚀 Key Takeaways
+
+- RNNs are foundational but limited in long-term memory
+- LSTMs and GRUs solve memory issues using gating mechanisms
+- Attention improves focus on relevant information
+- Transformers replace recurrence with scalable attention
+- BERT focuses on understanding, GPT focuses on generation
+
+---
+
+## 📚 Purpose of This Repository
+
+This repository helps in:
+- Machine Learning & Deep Learning learning path
+- Interview preparation
+- NLP architecture understanding
+- Project building and experimentation
+
+---
+
+## ⭐ Future Improvements
+
+- Code implementations (PyTorch / TensorFlow)
+- Hands-on notebooks
+- Real-world NLP projects
+- Transformer from scratch implementation
+
+---
+
+
+
+
 
