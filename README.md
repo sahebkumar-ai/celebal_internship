@@ -951,9 +951,7 @@ Overall, this project serves as a strong foundation for understanding sequence m
 
 
 
-# 🧠 Deep Learning Architectures: RNNs, LSTMs, GRUs & Transformers
-
-This repository provides a clear and structured overview of fundamental and advanced Deep Learning architectures used in Natural Language Processing (NLP) and sequence modeling. It is designed for students, beginners, and ML practitioners preparing for interviews or projects.
+# Topics Covered
 
 ---
 
@@ -1097,25 +1095,6 @@ GPT is a **decoder-only generative model** designed for text generation. It pred
 - Attention improves focus on relevant information
 - Transformers replace recurrence with scalable attention
 - BERT focuses on understanding, GPT focuses on generation
-
----
-
-## 📚 Purpose of This Repository
-
-This repository helps in:
-- Machine Learning & Deep Learning learning path
-- Interview preparation
-- NLP architecture understanding
-- Project building and experimentation
-
----
-
-## ⭐ Future Improvements
-
-- Code implementations (PyTorch / TensorFlow)
-- Hands-on notebooks
-- Real-world NLP projects
-- Transformer from scratch implementation
 
 ---
 
