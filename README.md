@@ -1100,5 +1100,186 @@ GPT is a **decoder-only generative model** designed for text generation. It pred
 
 
 
+ ### 6. Generative AI
+
+## Overview
+
+This repository provides a structured collection of implementations, notebooks, and learning resources covering fundamental and advanced concepts in **Deep Learning** and **Generative Artificial Intelligence (GenAI)**. It focuses on building a strong theoretical foundation while demonstrating practical implementations using modern deep learning frameworks.
+
+---
+
+# Repository Contents
+
+## 1. Autoencoder
+
+Autoencoders are unsupervised neural networks designed to learn efficient representations of data by compressing the input into a lower-dimensional latent space and reconstructing it with minimal information loss.
+
+### Topics Covered
+
+* **Introduction to Autoencoders** – Understand the motivation behind representation learning and dimensionality reduction.
+* **Encoder–Decoder Architecture** – Learn how data is compressed and reconstructed through neural networks.
+* **Latent Space Representation** – Explore how meaningful features are learned automatically.
+* **Reconstruction Loss** – Understand loss functions used to measure reconstruction quality.
+* **Applications** – Image denoising, anomaly detection, feature extraction, and data compression.
+
+---
+
+## 2. Variational Autoencoder (VAE)
+
+Variational Autoencoders extend traditional autoencoders by learning a probabilistic latent space, enabling the generation of new and realistic data samples.
+
+### Topics Covered
+
+* **Introduction to VAE** – Learn the limitations of traditional autoencoders and how VAEs overcome them.
+* **Probabilistic Latent Space** – Understand latent variable distributions instead of fixed embeddings.
+* **Reparameterization Trick** – Learn the technique that enables backpropagation through stochastic sampling.
+* **KL Divergence** – Explore regularization that shapes the latent distribution.
+* **Applications** – Image generation, anomaly detection, and representation learning.
+
+---
+
+## 3. Generative Adversarial Networks (GAN)
+
+GANs consist of two competing neural networks—a Generator and a Discriminator—that learn through adversarial training to generate realistic synthetic data.
+
+### Generator
+
+The Generator learns to transform random noise into realistic samples that resemble the training dataset.
+
+### Discriminator
+
+The Discriminator distinguishes between real and generated samples while providing feedback to improve the Generator.
+
+### GAN Training
+
+* Adversarial learning process
+* Generator and Discriminator loss functions
+* Training stability
+* Mode collapse
+* Practical implementation strategies
+
+---
+
+## 4. Optimization Algorithms
+
+Optimization algorithms determine how neural networks update their parameters during training to minimize the loss function.
+
+### SGD (Stochastic Gradient Descent)
+
+Introduces stochastic optimization using mini-batches, providing efficient training for large datasets.
+
+### SGD with Momentum
+
+Accelerates convergence by incorporating information from previous gradient updates to reduce oscillations.
+
+### AdaGrad
+
+Adapts the learning rate individually for each parameter, making it effective for sparse datasets.
+
+### RMSProp
+
+Uses exponentially weighted moving averages of squared gradients to achieve more stable and faster convergence.
+
+### Adam
+
+Combines Momentum and RMSProp to provide adaptive learning rates with efficient convergence, making it one of the most widely used optimizers in deep learning.
+
+---
+
+## 5. Introduction to Generative AI
+
+This section introduces the fundamentals of Generative AI, including the evolution of Large Language Models (LLMs), generative architectures, and their real-world applications.
+
+### Topics Covered
+
+* Fundamentals of Generative AI
+* Large Language Models (LLMs)
+* Transformer Architecture
+* Text Generation
+* Image Generation
+* AI Assistants
+* Industrial Applications
+
+---
+
+## 6. Retrieval-Augmented Generation (RAG)
+
+Retrieval-Augmented Generation combines external knowledge retrieval with Large Language Models to generate accurate, context-aware, and up-to-date responses.
+
+### Topics Covered
+
+* Motivation behind RAG
+* Embedding Models
+* Document Chunking
+* Vector Databases
+* Similarity Search
+* Retrieval Pipeline
+* Answer Generation
+
+---
+
+## 7. Retrieval-Augmented Generation using LangChain
+
+This section demonstrates how LangChain simplifies the development of end-to-end RAG applications by integrating document loaders, embeddings, vector stores, and language models.
+
+### Topics Covered
+
+* LangChain Fundamentals
+* Document Loaders
+* Text Splitters
+* Embedding Models
+* Vector Stores
+* Retrievers
+* Prompt Templates
+* Chains
+* Complete RAG Pipeline
+
+---
+
+## 8. Prompt Engineering
+
+Prompt Engineering focuses on designing effective prompts that improve the quality, accuracy, and reliability of responses generated by Large Language Models.
+
+### Topics Covered
+
+* Prompt Design Principles
+* Zero-Shot Prompting
+* One-Shot Prompting
+* Few-Shot Prompting
+* Chain-of-Thought Prompting
+* Role-Based Prompting
+* Prompt Optimization
+* Best Practices
+
+---
+
+## Technology Stack
+
+* Python
+* PyTorch
+* TensorFlow / Keras
+* NumPy
+* Pandas
+* Matplotlib
+* Scikit-learn
+* LangChain
+* Hugging Face Transformers
+* FAISS / ChromaDB
+* Jupyter Notebook
+
+---
+
+## Learning Outcomes
+
+After completing this repository, you will be able to:
+
+* Build and train Autoencoders and Variational Autoencoders.
+* Develop and train Generative Adversarial Networks.
+* Understand and compare modern optimization algorithms.
+* Apply Generative AI concepts in practical applications.
+* Build Retrieval-Augmented Generation (RAG) systems using LangChain.
+* Design effective prompts for Large Language Models.
+* Develop end-to-end AI applications using modern deep learning tools.
+
 
 
