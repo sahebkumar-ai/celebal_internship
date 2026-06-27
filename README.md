@@ -1186,7 +1186,7 @@ Combines Momentum and RMSProp to provide adaptive learning rates with efficient 
 
 ---
 
-## 5. Introduction to Generative AI
+##  Week 6 Introduction to Generative AI
 
 This section introduces the fundamentals of Generative AI, including the evolution of Large Language Models (LLMs), generative architectures, and their real-world applications.
 
