@@ -1186,7 +1186,8 @@ Combines Momentum and RMSProp to provide adaptive learning rates with efficient 
 
 ---
 
-##  Week 6 Introduction to Generative AI
+
+
 
 This section introduces the fundamentals of Generative AI, including the evolution of Large Language Models (LLMs), generative architectures, and their real-world applications.
 
@@ -1202,7 +1203,7 @@ This section introduces the fundamentals of Generative AI, including the evoluti
 
 ---
 
-## 6. Retrieval-Augmented Generation (RAG)
+### week 6 Generative Ai
 
 Retrieval-Augmented Generation combines external knowledge retrieval with Large Language Models to generate accurate, context-aware, and up-to-date responses.
 
