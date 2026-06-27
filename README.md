@@ -1100,11 +1100,117 @@ GPT is a **decoder-only generative model** designed for text generation. It pred
 
 
 
- ### Week 6. Generative AI
+ ### Week 6. Generative  Artificial Intelligence
 
-## Overview
+ # 🧠 MNIST Image Denoising using Convolutional Autoencoder
 
-This repository provides a structured collection of implementations, notebooks, and learning resources covering fundamental and advanced concepts in **Deep Learning** and **Generative Artificial Intelligence (GenAI)**. It focuses on building a strong theoretical foundation while demonstrating practical implementations using modern deep learning frameworks.
+## 📌 Project Overview
+
+This project demonstrates the implementation of a **Convolutional Autoencoder** using **TensorFlow and Keras** to perform **image denoising** on the MNIST dataset.  
+The model learns to reconstruct clean handwritten digit images from their noisy versions using an encoder–decoder architecture.
+
+---
+
+## 🎯 Objective
+
+- Build a deep learning model for image reconstruction
+- Remove noise from corrupted MNIST images
+- Learn efficient feature representations using autoencoders
+- Visualize and evaluate model performance
+
+---
+
+## 🧾 Dataset
+
+- **Dataset:** MNIST Handwritten Digits
+- **Source:** Keras built-in dataset
+- **Image Size:** 28 × 28 grayscale
+- **Classes:** 10 digits (0–9)
+
+---
+
+## ⚙️ Technologies Used
+
+- **Python**
+- **TensorFlow / Keras**
+- **NumPy**
+- **Matplotlib**
+- **CUDA / cuDNN (GPU acceleration)**
+
+---
+
+## 🏗️ Model Architecture
+
+The model is a **Convolutional Autoencoder** consisting of:
+
+### 🔹 Encoder
+- Conv2D (32 filters)
+- MaxPooling2D
+- Conv2D (16 filters)
+- MaxPooling2D
+
+### 🔹 Decoder
+- Conv2D (16 filters)
+- UpSampling2D
+- Conv2D (32 filters)
+- UpSampling2D
+- Conv2D (1 filter, Sigmoid activation)
+
+---
+
+## 🔄 Workflow Pipeline
+
+1. Load MNIST dataset
+2. Normalize images (0–1 scaling)
+3. Add Gaussian noise to input images
+4. Build convolutional autoencoder
+5. Compile model using Adam optimizer
+6. Train using noisy images as input and clean images as target
+7. Evaluate model performance
+8. Visualize results
+
+---
+
+## 🧪 Training Details
+
+- **Optimizer:** Adam  
+- **Loss Function:** Binary Crossentropy  
+- **Batch Size:** 128  
+- **Epochs:** 10  
+- **Validation Data:** Noisy MNIST test set  
+
+---
+
+## 📊 Results
+
+- The model successfully learned to remove noise from images
+- Loss decreased steadily during training
+- Reconstructed images closely match original digits
+- Strong generalization on test dataset
+
+---
+
+## 🖼️ Sample Output
+
+| Original | Noisy | Denoised |
+|----------|------|----------|
+| ✔️ | ❌ | ✔️ |
+
+---
+
+## 📈 Key Observations
+
+- Autoencoder effectively learned compressed representations
+- Noise reduction improved with training epochs
+- Decoder successfully restored structural digit features
+
+---
+
+
+
+## 📌 Conclusion
+
+This project demonstrates the power of **deep learning-based autoencoders** in image denoising tasks. The model effectively reconstructs clean images from noisy inputs, making it useful for real-world applications such as **image restoration, medical imaging, and computer vision preprocessing**.
 
 ---
 
