@@ -1100,7 +1100,7 @@ GPT is a **decoder-only generative model** designed for text generation. It pred
 
 
 
- ### 6. Generative AI
+ ### Week 6. Generative AI
 
 ## Overview
 
