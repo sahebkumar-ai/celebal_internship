@@ -1390,3 +1390,431 @@ After completing this repository, you will be able to:
 
 
 
+ ### Week 7. Retrieval-Augmented Generation (RAG) and Large Language Models (LLMs)
+
+# 📄 Document Question Answering System using Retrieval-Augmented Generation (RAG)
+
+<div align="center">
+
+![Python](https://img.shields.io/badge/Python-3.10%2B-blue)
+![Streamlit](https://img.shields.io/badge/Streamlit-Web%20App-red)
+![LangChain](https://img.shields.io/badge/LangChain-RAG-green)
+![Google Gemini](https://img.shields.io/badge/Google-Gemini-orange)
+![FAISS](https://img.shields.io/badge/Vector%20Database-FAISS-purple)
+![License](https://img.shields.io/badge/License-MIT-brightgreen)
+
+**An AI-powered Retrieval-Augmented Generation (RAG) application that enables users to ask questions about their own PDF documents using Google Gemini, LangChain, Hugging Face Embeddings, and FAISS.**
+
+</div>
+
+---
+
+# 📌 Overview
+
+The **Document Question Answering System** is a Retrieval-Augmented Generation (RAG) application that allows users to interact with their own documents through natural language.
+
+Instead of relying solely on a Large Language Model's internal knowledge, the system first retrieves the most relevant information from uploaded documents and then generates an answer based on that retrieved context.
+
+This approach significantly improves answer accuracy, reduces hallucinations, and enables AI-powered question answering over custom or private data.
+
+The application supports PDF documents such as:
+
+- Academic Notes
+- Research Papers
+- Resume/CV
+- Books
+- Technical Documentation
+- Company Reports
+- Study Materials
+
+---
+
+# 🎯 Objectives
+
+The primary objectives of this project are:
+
+- Understand Retrieval-Augmented Generation (RAG)
+- Build an end-to-end AI document assistant
+- Learn semantic search using embeddings
+- Perform vector similarity search with FAISS
+- Integrate Google Gemini with LangChain
+- Build a professional Streamlit application
+- Answer questions using custom documents
+
+---
+
+# ✨ Features
+
+- 📂 Upload one or multiple PDF documents
+- 📄 Automatic PDF text extraction
+- ✂ Intelligent document chunking
+- 🧠 Hugging Face sentence embeddings
+- ⚡ FAISS vector database
+- 🔍 Semantic similarity search
+- 🤖 Google Gemini-powered answer generation
+- 💬 Interactive Streamlit interface
+- 📑 Source-aware document retrieval
+- ⚙ Modular project architecture
+- 🔒 Secure API key management using `.env`
+- 🚀 Fast and scalable retrieval pipeline
+
+---
+
+# 🏗 System Architecture
+
+```
+                    User Uploads PDF
+                            │
+                            ▼
+                  Document Loader (PyPDF)
+                            │
+                            ▼
+                    Text Chunking
+                            │
+                            ▼
+                Hugging Face Embeddings
+                            │
+                            ▼
+                  FAISS Vector Database
+                            │
+                            ▼
+                    User Question
+                            │
+                            ▼
+                Semantic Similarity Search
+                            │
+                            ▼
+               Retrieved Relevant Chunks
+                            │
+                            ▼
+                 Google Gemini LLM
+                            │
+                            ▼
+                     Final Answer
+```
+
+---
+
+# 🧠 Key Concepts
+
+## 1. Retrieval
+
+Relevant document chunks are retrieved using semantic similarity search instead of keyword matching.
+
+---
+
+## 2. Augmentation
+
+Retrieved context is combined with the user's question before sending it to the language model.
+
+---
+
+## 3. Generation
+
+Google Gemini generates an answer grounded in the retrieved document context.
+
+---
+
+# 📂 Project Structure
+
+```
+Document-QA-RAG/
+│
+├── app.py
+├── config.py
+├── requirements.txt
+├── README.md
+├── .env
+├── .env.example
+│
+├── data/
+│   ├── sample.pdf
+│
+├── prompts/
+│   └── prompt_template.py
+│
+├── vector_store/
+│
+├── utils/
+│   ├── __init__.py
+│   ├── document_loader.py
+│   ├── text_splitter.py
+│   ├── embeddings.py
+│   ├── vector_store.py
+│   ├── retriever.py
+│   ├── llm.py
+│   └── rag_pipeline.py
+│
+├── test_loader.py
+├── test_splitter.py
+├── test_embeddings.py
+├── test_vector_store.py
+├── test_retriever.py
+├── test_prompt.py
+├── test_llm.py
+└── test_rag.py
+```
+
+---
+
+# ⚙ Technologies Used
+
+| Technology | Purpose |
+|------------|----------|
+| Python | Programming Language |
+| Streamlit | User Interface |
+| LangChain | RAG Pipeline |
+| Google Gemini | Large Language Model |
+| Hugging Face | Embedding Model |
+| FAISS | Vector Database |
+| PyPDF | PDF Processing |
+| python-dotenv | Environment Variables |
+
+---
+
+# 📚 Dataset
+
+This project is designed for **custom/private documents**.
+
+Example datasets include:
+
+- Resume
+- Notes
+- Books
+- Research Papers
+- Technical Documentation
+- Study Materials
+
+Users can also experiment with publicly available datasets from Hugging Face.
+
+---
+
+# 🔄 Workflow
+
+### Step 1
+
+Load PDF documents.
+
+↓
+
+### Step 2
+
+Extract text from the documents.
+
+↓
+
+### Step 3
+
+Split text into semantic chunks.
+
+↓
+
+### Step 4
+
+Generate embeddings for each chunk.
+
+↓
+
+### Step 5
+
+Store embeddings in the FAISS vector database.
+
+↓
+
+### Step 6
+
+Accept a user's question.
+
+↓
+
+### Step 7
+
+Retrieve the most relevant document chunks.
+
+↓
+
+### Step 8
+
+Provide retrieved context to Google Gemini.
+
+↓
+
+### Step 9
+
+Generate a context-aware answer.
+
+↓
+
+### Step 10
+
+Display the final response in Streamlit.
+
+---
+
+# 💡 Example
+
+## User Question
+
+> What are the technical skills mentioned in my resume?
+
+---
+
+## System Process
+
+- Searches the vector database
+- Retrieves the relevant resume section
+- Sends retrieved content to Gemini
+- Generates a concise answer
+
+---
+
+## Output
+
+```
+Technical Skills:
+
+• Python
+• Machine Learning
+• SQL
+• LangChain
+• Streamlit
+• FAISS
+• Google Gemini
+```
+
+---
+
+# 🚀 Installation
+
+Clone the repository
+
+```bash
+git clone <repository-url>
+```
+
+Move to the project directory
+
+```bash
+cd Document-QA-RAG
+```
+
+Create a virtual environment
+
+```bash
+python -m venv venv
+```
+
+Activate the environment
+
+Windows
+
+```bash
+venv\Scripts\activate
+```
+
+Linux / macOS
+
+```bash
+source venv/bin/activate
+```
+
+Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+# 🔑 Environment Variables
+
+Create a `.env` file.
+
+```env
+GOOGLE_API_KEY=YOUR_GEMINI_API_KEY
+```
+
+---
+
+# ▶ Running the Application
+
+```bash
+streamlit run app.py
+```
+
+or
+
+```bash
+python -m streamlit run app.py
+```
+
+---
+
+# 📈 Future Improvements
+
+- Multi-document retrieval
+- Hybrid Search (BM25 + Vector Search)
+- Cross-Encoder Re-ranking
+- Chat History
+- Conversation Memory
+- Source Page References
+- OCR Support for Scanned PDFs
+- Docker Deployment
+- Cloud Deployment
+- User Authentication
+- Multiple LLM Support
+- PDF Summarization
+- Citation Generation
+
+---
+
+# 📖 Learning Outcomes
+
+After completing this project, you will understand:
+
+- Retrieval-Augmented Generation (RAG)
+- Semantic Search
+- Embeddings
+- Vector Databases
+- Prompt Engineering
+- Large Language Models
+- LangChain Pipelines
+- Google Gemini Integration
+- Streamlit Development
+- AI-powered Knowledge Retrieval
+
+---
+
+# 🎯 Applications
+
+This project can be used for:
+
+- AI Study Assistant
+- Research Paper Assistant
+- Resume Analyzer
+- Company Knowledge Base
+- Enterprise Search
+- Legal Document Search
+- Medical Documentation
+- Educational Chatbots
+- Internal Documentation Search
+- AI Customer Support
+
+---
+
+# 🤝 Contribution
+
+Contributions are welcome.
+
+If you would like to improve this project:
+
+1. Fork the repository
+2. Create a new feature branch
+3. Commit your changes
+4. Push the branch
+5. Open a Pull Request
+
+---
+
+
+
