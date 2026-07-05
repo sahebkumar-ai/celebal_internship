@@ -9,7 +9,7 @@ from typing import List
 from langchain_core.documents import Document
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 
-from config import CHUNK_SIZE, CHUNK_OVERLAP
+from vector_store.faiss_index.config import CHUNK_SIZE, CHUNK_OVERLAP
 
 
 class TextSplitter:

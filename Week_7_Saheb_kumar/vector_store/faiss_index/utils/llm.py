@@ -6,7 +6,7 @@ Initializes and manages the Google Gemini LLM.
 
 from langchain_google_genai import ChatGoogleGenerativeAI
 
-from config import (
+from vector_store.faiss_index.config import (
     GOOGLE_API_KEY,
     LLM_MODEL,
     TEMPERATURE,

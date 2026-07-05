@@ -9,7 +9,7 @@ from pathlib import Path
 
 import streamlit as st
 
-from config import APP_TITLE, APP_ICON
+from vector_store.faiss_index.config import APP_TITLE, APP_ICON
 from utils.rag_pipeline import RAGPipeline
 
 

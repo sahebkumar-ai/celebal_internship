@@ -10,7 +10,7 @@ from typing import List
 from langchain_core.documents import Document
 from langchain_community.vectorstores import FAISS
 
-from config import VECTOR_DB_PATH
+from vector_store.faiss_index.config import VECTOR_DB_PATH
 from utils.embeddings import EmbeddingManager
 
 

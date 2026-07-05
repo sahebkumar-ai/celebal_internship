@@ -8,7 +8,7 @@ from typing import List, Tuple
 
 from langchain_core.documents import Document
 
-from config import TOP_K
+from vector_store.faiss_index.config import TOP_K
 from utils.vector_store import VectorStoreManager
 
 
