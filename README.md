@@ -1802,5 +1802,405 @@ This project can be used for:
 
 ---
 
+ 📚 Week 8: Agentic AI
 
+# 🤖 Single-Agent Smart Assistant
+
+A Python-based **Single-Agent Smart Assistant** that intelligently understands user queries, performs **intent-based routing**, invokes the appropriate tool, and returns responses in a structured JSON format.
+
+This project demonstrates the core concepts of **AI agents**, **tool integration**, **conditional routing**, and **error handling**, making it an excellent beginner-friendly implementation of an intelligent agent system.
+
+---
+
+# 📌 Project Overview
+
+The Single-Agent Smart Assistant receives a user's query, identifies its intent, and decides which tool should be executed.
+
+The assistant supports multiple types of requests including:
+
+- Mathematical calculations
+- Keyword extraction
+- Word counting
+- Text reversal
+- Current date retrieval
+- General question handling
+
+Instead of executing every tool sequentially, the agent makes intelligent decisions using **conditional routing**.
+
+---
+
+# ✨ Features
+
+- Intelligent Agent Logic
+- Conditional Routing
+- Calculator Tool
+- Keyword Extraction Tool
+- Word Count Tool
+- Reverse Text Tool
+- Current Date Tool
+- Structured JSON Responses
+- Basic Error Handling
+- Logging for Debugging
+- Interactive Command-Line Interface
+- Modular and Extensible Architecture
+
+---
+
+# 🏗️ Project Structure
+
+```
+Single-Agent-Smart-Assistant/
+│
+├── agent.py
+├── README.md
+└── requirements.txt
+```
+
+---
+
+# ⚙️ Technologies Used
+
+- Python 3.x
+- Logging Module
+- Datetime Module
+
+No external libraries are required.
+
+---
+
+# 🧠 Agent Workflow
+
+```
+                User Query
+                     │
+                     ▼
+            Agent Receives Input
+                     │
+                     ▼
+          Convert Query to Lowercase
+                     │
+                     ▼
+        Intent Detection (Routing Logic)
+                     │
+      ┌──────────────┼──────────────┐
+      │              │              │
+      ▼              ▼              ▼
+ Calculator     Keyword Tool    Other Tools
+      │              │              │
+      └──────────────┼──────────────┘
+                     │
+                     ▼
+            Structured JSON Output
+```
+
+---
+
+# 🛠 Tools
+
+## 1. Calculator Tool
+
+Evaluates mathematical expressions.
+
+Example:
+
+```
+Calculate 25 + 50
+```
+
+Output
+
+```json
+{
+    "type": "calculation",
+    "result": "75"
+}
+```
+
+---
+
+## 2. Keyword Extraction Tool
+
+Extracts important keywords from text.
+
+Example
+
+```
+Extract keywords from Artificial Intelligence is transforming industries
+```
+
+Output
+
+```json
+{
+    "type": "keywords",
+    "result": [
+        "artificial",
+        "intelligence",
+        "transforming",
+        "industries"
+    ]
+}
+```
+
+---
+
+## 3. Word Count Tool
+
+Counts the number of words.
+
+Example
+
+```
+Count words Machine learning is amazing
+```
+
+Output
+
+```json
+{
+    "type": "word_count",
+    "result": 4
+}
+```
+
+---
+
+## 4. Reverse Text Tool
+
+Reverses the given text.
+
+Example
+
+```
+Reverse Artificial Intelligence
+```
+
+Output
+
+```json
+{
+    "type": "reverse",
+    "result": "ecnegilletnI laicifitrA"
+}
+```
+
+---
+
+## 5. Current Date Tool
+
+Returns the current system date.
+
+Example
+
+```
+What is today's date?
+```
+
+Output
+
+```json
+{
+    "type": "date",
+    "result": "10-07-2026"
+}
+```
+
+---
+
+# 🔀 Routing Logic
+
+The agent uses conditional routing to determine which tool to execute.
+
+| User Intent | Tool Used |
+|-------------|-----------|
+| calculate | Calculator |
+| compute | Calculator |
+| solve | Calculator |
+| keywords | Keyword Extractor |
+| extract | Keyword Extractor |
+| count words | Word Counter |
+| reverse | Reverse Text |
+| date | Current Date |
+| anything else | General Response |
+
+---
+
+# 📤 Output Format
+
+Every response follows a structured JSON format.
+
+```json
+{
+    "type": "response_type",
+    "result": "output"
+}
+```
+
+Possible response types:
+
+- calculation
+- keywords
+- word_count
+- reverse
+- date
+- general
+- error
+
+---
+
+# 🚀 Installation
+
+Clone the repository
+
+```bash
+git clone https://github.com/yourusername/Single-Agent-Smart-Assistant.git
+```
+
+Move into the project directory
+
+```bash
+cd Single-Agent-Smart-Assistant
+```
+
+Run the program
+
+```bash
+python agent.py
+```
+
+---
+
+# 🧪 Example Queries
+
+```
+Calculate 20 + 5
+
+Compute 100 / 4
+
+Solve 10 * 15
+
+Extract keywords from Artificial Intelligence is transforming industries
+
+Count words Machine Learning is changing the world
+
+Reverse Hello World
+
+What is today's date?
+
+What is Machine Learning?
+```
+
+---
+
+# 📋 Sample Outputs
+
+### Calculation
+
+```json
+{
+    "type": "calculation",
+    "result": "25"
+}
+```
+
+---
+
+### Keywords
+
+```json
+{
+    "type": "keywords",
+    "result": [
+        "artificial",
+        "intelligence",
+        "transforming",
+        "industries"
+    ]
+}
+```
+
+---
+
+### General
+
+```json
+{
+    "type": "general",
+    "result": "You asked: What is Machine Learning?"
+}
+```
+
+---
+
+### Error
+
+```json
+{
+    "type": "error",
+    "result": "Error in calculation"
+}
+```
+
+---
+
+# ⚠ Error Handling
+
+The assistant includes robust error handling to ensure smooth execution.
+
+It handles:
+
+- Invalid mathematical expressions
+- Unexpected exceptions
+- Invalid user inputs
+
+Instead of crashing, the assistant returns an informative JSON response.
+
+---
+
+# 📝 Logging
+
+The application uses Python's built-in **logging** module to record:
+
+- User queries
+- Routing decisions
+- Tool execution
+- Errors
+- Debugging information
+
+This helps developers monitor and troubleshoot the application effectively.
+
+---
+
+# 📈 Future Improvements
+
+Possible enhancements include:
+
+- Natural Language Processing (NLP)
+- Large Language Model (LLM) integration
+- LangChain integration
+- LangGraph agent workflows
+- Memory support
+- Database connectivity
+- Voice assistant support
+- REST API deployment
+- Web interface using Streamlit or Flask
+- Authentication and user management
+
+---
+
+# 🎯 Learning Outcomes
+
+This project demonstrates:
+
+- AI Agent Fundamentals
+- Conditional Routing
+- Tool Calling
+- Function Calling
+- JSON Response Design
+- Error Handling
+- Logging
+- Modular Programming
+- Python Best Practices
+
+---
 
