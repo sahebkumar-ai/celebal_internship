@@ -1802,7 +1802,7 @@ This project can be used for:
 
 ---
 
- 📚 Week 8: Agentic AI
+ ##  Week 8– Agentic Ai
 
 # 🤖 Single-Agent Smart Assistant
 
