@@ -43,7 +43,7 @@ const PROCESS_STEPS = [
   { title: "Image Preprocessing", desc: "Resize 224×224 • Normalize • Augment", icon: "✦" },
   { title: "Feature Extraction", desc: "Convolutional backbone activation", icon: "◍" },
   { title: "EfficientNet Embedding", desc: "1280-D vector generation", icon: "⬙" },
-  { title: "FAISS Similarity Search", desc: "ANN search over 44k indexed vectors", icon: "◎" },
+  { title: "FAISS Similarity Search", desc: "ANN search over 120 indexed vectors", icon: "◎" },
   { title: "Ranking Results", desc: "Cosine similarity re-ranking", icon: "≡" },
   { title: "Display Recommendations", desc: "Top-K visually similar products", icon: "✓" },
 ];
@@ -419,7 +419,7 @@ export default function App() {
 
             <div className="grid grid-cols-3 gap-3 max-w-[460px] pt-2">
               {[
-                { k: "44k+", v: "Indexed Products" },
+                { k: "120", v: "Indexed Products" },
                 { k: "92.4%", v: "Top-5 Precision" },
                 { k: "29ms", v: "Avg Inference" },
               ].map(m => (
@@ -1109,7 +1109,7 @@ export default function App() {
                   ))}
                 </div>
                 <div className={`rounded-[12px] p-3 text-[11px] leading-[1.5] border ${darkMode ? 'bg-white/[0.04] border-white/[0.06] text-zinc-400' : 'bg-zinc-50 border-zinc-200 text-zinc-600'}`}>
-                  This item was retrieved via {selectedModel} with FAISS IndexFlatL2 over 44k vectors. Visual similarity computed on 512-D embeddings fine-tuned for texture, pattern, and silhouette.
+                  This item was retrieved via {selectedModel} with a FAISS index over 120 vectors. Visual similarity is computed from the selected model embedding.
                 </div>
                 <div className="flex gap-2">
                   <button onClick={() => saveFavorite(selectedProduct)} className="flex-1 h-10 rounded-full bg-zinc-900 dark:bg-white text-white dark:text-black text-[12px] font-medium">Add to favorites</button>
