@@ -1,0 +1,16 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+.env
+
+# VS Code
+.vscode/
+
+# Node.js
+Frontend/node_modules/
+Frontend/dist/
+Frontend/build/
+
+# Temporary files
+temp_uploads/
