@@ -71,11 +71,28 @@ AI_Image_Recommendation_System/
 └── README.md
 ```
 
-> Large datasets, trained models, and generated embeddings are excluded from this repository because of GitHub storage limits. They can be regenerated using the provided scripts after downloading the dataset.
+### Submission artefact tree
+
+```text
+AI_Image_Recommendation_System/
+|-- dataset/subset/                 # 120 images: 6 categories x 20
+|-- embeddings/
+|   |-- embeddings.npy               # (120, 1280)
+|   |-- filenames.pkl
+|   `-- faiss.index                  # 120 vectors
+|-- Frontend/                        # React + Vite client
+|-- models/feature_extractor.py      # EfficientNetB0 embedding model
+|-- src/                             # preparation, indexing, retrieval scripts
+|-- api.py                           # FastAPI upload/recommend endpoint
+|-- supabase_schema.sql              # database schema + RLS policies
+`-- screenshots/                     # UI evidence for submission
+```
+
+> The submission includes a compact 120-image subset and its generated embedding/index artefacts. Larger datasets and regenerated model artefacts should be kept out of Git and reproduced with the supplied scripts.
 
 ## Dataset
 
-The project uses the [Fashion Product Images Dataset](https://www.kaggle.com/datasets/paramaggarwal/fashion-product-images-dataset). It contains fashion categories including shirts, shoes, dresses, jeans, T-shirts, handbags, watches, and accessories. A subset of approximately 1,500-2,500 images can be used for efficient experimentation and evaluation.
+The project uses the [Fashion Product Images Dataset](https://www.kaggle.com/datasets/paramaggarwal/fashion-product-images-dataset). The included local subset contains **120 images**: 20 each of Casual Shoes, Dresses, Handbags, Jeans, Shirts, and Tshirts. Its generated EfficientNetB0 embeddings have shape **(120, 1280)** and the checked FAISS index has **120 vectors**.
 
 ## Technology Stack
 
@@ -159,7 +176,9 @@ Never commit a populated `.env` file.
 
 ### Download and prepare the dataset
 
-Download the Fashion Product Images Dataset, place it in a local working directory, and use the supplied preparation scripts as needed:
+1. Download the Fashion Product Images Dataset from Kaggle and extract it locally.
+2. Ensure `styles.csv` and `images/` are available in either `kaggle_Data/fashion-dataset/` or `dataset/`.
+3. Set `SAMPLES_PER_CATEGORY = 20` in `src/create_subset.py` to reproduce the submission-sized subset (or increase it for a larger experiment), then run:
 
 ```bash
 python src/prepare_kaggle_dataset.py
@@ -175,7 +194,11 @@ python src/generate_embeddings.py
 python src/faiss_index.py
 ```
 
-The generated embeddings and FAISS index are intentionally ignored by Git.
+The generated embeddings and FAISS index are included for this compact submission subset; regenerate them after changing the dataset.
+
+### Verified submission artefacts
+
+The submission workspace was verified with 120 source images, 120 saved embeddings, and a 120-vector FAISS index. A local query image returned five recommendations and did not return the query image itself.
 
 ### Start the backend
 
@@ -199,9 +222,14 @@ The included evaluation workflow supports common retrieval measures:
 | Precision@K | Percentage of relevant products among the Top-K results |
 | Recall@K | Portion of relevant products retrieved in the Top-K results |
 
-## Authentication and Database
+## Required Supabase setup
 
-Supabase provides email authentication, registration, login, session management, user profiles, and recommendation history. Use `supabase_schema.sql` to set up the required database schema.
+1. Create a Supabase project.
+2. In **Authentication -> Providers**, enable Email authentication. For a quick demo, disable email confirmation or complete the confirmation email before signing in.
+3. In **SQL Editor**, run `supabase_schema.sql`. It creates `profiles`, `recommendation_searches`, `favorites`, and `feedback`, plus row-level-security policies and the profile-creation trigger.
+4. Copy `Frontend/.env.example` to `Frontend/.env` and set `VITE_SUPABASE_URL`, `VITE_SUPABASE_ANON_KEY`, and `VITE_API_BASE_URL=http://127.0.0.1:8000`. Do not commit real credentials.
+
+With Supabase unset, visual search still works; sign-in and history/favourites/feedback persistence are unavailable.
 
 ## Deployment
 
@@ -213,7 +241,13 @@ Supabase provides email authentication, registration, login, session management,
 
 ## Sample Results
 
-Screenshots and example recommendation results can be added here in a future update.
+Local UI evidence is included in `screenshots/`.
+
+| Desktop dashboard | Upload-ready state | Mobile dashboard |
+| --- | --- | --- |
+| ![Desktop dashboard](screenshots/dashboard-desktop.png) | ![Image selected for recommendation](screenshots/upload-ready.png) | ![Mobile dashboard](screenshots/dashboard-mobile.png) |
+
+The multipart API flow was also verified locally: uploading a dataset image to `POST /api/recommend` returned HTTP 200 and five recommendations.
 
 ## Future Enhancements
 
