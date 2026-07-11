@@ -245,7 +245,7 @@ Local UI evidence is included in `screenshots/`.
 
 | Desktop dashboard | Upload-ready state | Mobile dashboard | Sample Result |
 | --- | --- | --- | --- |
-| ![Desktop dashboard](screenshots/dashboard-desktop.png) | ![Image selected for recommendation](screenshots/upload-ready.png) | ![Mobile dashboard](screenshots/dashboard-mobile.png)|![Sample Result]<img width="1920" height="1020" alt="image" src="https://github.com/user-attachments/assets/b23ca08c-d1f5-42c4-9b2c-90c9237dc873" />
+| ![Desktop dashboard](screenshots/dashboard-desktop.png) | ![Image selected for recommendation](screenshots/upload-ready.png) | ![Mobile dashboard](screenshots/dashboard-mobile.png)|<img width="1920" height="1020" alt="image" src="https://github.com/user-attachments/assets/b23ca08c-d1f5-42c4-9b2c-90c9237dc873" />
  |
 
 The multipart API flow was also verified locally: uploading a dataset image to `POST /api/recommend` returned HTTP 200 and five recommendations.
