@@ -1,4 +1,4 @@
-# AI Image Recommendation System
+# An Image Recommendation System
 
 An end-to-end visual product recommendation system that retrieves visually similar fashion products from an uploaded image. It combines EfficientNetB0 feature extraction, FAISS similarity search, a React + Vite frontend, a FastAPI backend, and Supabase authentication and persistence.
 
