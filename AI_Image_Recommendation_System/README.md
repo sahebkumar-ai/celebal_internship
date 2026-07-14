@@ -40,7 +40,7 @@ Top-K similar products
 ## Project Structure
 
 ```text
-AI_Image_Recommendation_System/
+An_Image_Recommendation_System/
 ├── Frontend/
 │   ├── src/
 │   │   ├── lib/supabase.ts
@@ -74,7 +74,7 @@ AI_Image_Recommendation_System/
 ### Submission artefact tree
 
 ```text
-AI_Image_Recommendation_System/
+An_Image_Recommendation_System/
 |-- dataset/subset/                 # 120 images: 6 categories x 20
 |-- embeddings/
 |   |-- embeddings.npy               # (120, 1280)
